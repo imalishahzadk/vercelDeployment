@@ -1,0 +1,75 @@
+.input-container {
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+  }
+  
+  .input-field:focus + .input-label,
+  .input-field:not(:placeholder-shown) + .input-label {
+    top: 0;
+    font-size: 0.75rem;
+    color: #555;
+  }
+
+  
+
+
+
+
+  .floating-label {
+    position: relative;
+    margin-top: 1.5rem;
+  }
+
+  .floating-label select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    appearance: none;
+  }
+
+  .floating-label label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0 5px;
+    transition: 0.2s;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #999;
+  }
+
+  .floating-label select:focus + label,
+  .floating-label select:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 0.75rem;
+    color: #007bff;
+  }
+
+  .floating-label select:focus {
+    border-color: #007bff;
+    outline: none;
+  }

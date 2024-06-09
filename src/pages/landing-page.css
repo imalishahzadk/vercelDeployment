@@ -1,0 +1,40 @@
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 0.9s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.9s ease-out;
+}
+
+
+.expand-content {
+    max-height: 1000px; /* Adjust this value as needed */
+    transition: max-height 0.9s ease-in-out; /* Adjust duration and timing function as needed */
+    overflow: hidden;
+}
+
+.collapse-content {
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out; /* Adjust duration and timing function as needed */
+    overflow: hidden;
+}
